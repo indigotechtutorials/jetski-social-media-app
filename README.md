@@ -1,4 +1,4 @@
-# jetski-social-media-app
+# 🌊 Jetski social media example ⚡️
 
 ### Installation steps
 
