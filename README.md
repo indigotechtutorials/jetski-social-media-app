@@ -20,3 +20,10 @@
 
 Open browser and go to localhost:8000
 
+### Other information
+
+#### Seed database
+
+run the following command to seed database with example records
+
+`jetski db seed`
