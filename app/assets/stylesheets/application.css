@@ -1,0 +1,156 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.centered-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0px auto 0px auto;
+  padding-top: 5rem;
+  padding: 16px;
+}
+
+.page-header {
+  font-size: 48px;
+}
+
+.page-subheader {
+  font-size: 32px;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 700px;
+  width: 100%;
+  margin: 0px auto 0px auto;
+  padding-top: 2rem;
+}
+
+.post-card {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(239, 239, 239);
+  padding: 16px;
+  border-radius: 8px;
+
+  .title {
+    font-size: 30px;
+  }
+
+  .body {
+    font-size: 24px;
+  }
+}
+
+.h-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.v-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.v-center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-post-btn {
+  background-color: rgb(0, 123, 255);
+  color: rgb(247, 247, 247);
+  font-size: 24px;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.new-post-btn:hover {
+  transform: scale(1.05);
+  transition: transform 350ms ease-in-out;
+}
+
+.create-post-btn {
+  background-color: rgb(0, 123, 255);
+  color: rgb(247, 247, 247);
+  font-size: 24px;
+  text-decoration: none;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.461);
+  
+  /* display: flex; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-post-modal {
+  max-width: 800px;
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  z-index: 999;
+  background-color: rgb(255, 255, 255);
+
+  .modal-header {
+    height: 80px;
+    padding: 14px;
+  }
+
+  .modal-body {
+    height: 340px;
+    overflow-y: auto;
+    padding: 14px;
+  }
+
+  .modal-actions {
+    height: 80px;
+    padding: 14px;
+  }
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .label {
+    font-size: 20px;
+  }
+
+  .field {
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    border: black 1px solid;
+  }
+}

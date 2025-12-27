@@ -1,0 +1,46 @@
+<div class="centered-container">
+  <div class="h-container">
+    <div class="v-container">
+      <h1 class="page-header"> Latest posts </h1>
+      <p class="page-subheader"> Brought to you from the community </p>
+    </div>
+    <div class="v-center-container">
+      <a href="#" class="new-post-btn" data-modal-toggle="new-post"> New post </a>
+    </div>
+  </div>
+  <div class="posts-container">
+    <% @posts.reverse.each do |post| %>
+      <div class="post-card">
+        <span class="title"> <%= post.title %> </span>
+        <p class="body"> <%= post.body %> </p>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="modal-container" data-modal="new-post">
+  <div class="new-post-modal">
+    <form action="/posts" method="POST">
+      <div class="modal-header">
+        <h3 class="title"> New post </h3>
+      </div>
+      <div class="modal-body">
+        <div class="form-container">
+          <div class="field-container">
+            <label for="" class="label"> Title </label>
+            <input name="posts[title]" class="field"/>
+          </div>
+
+          <div class="field-container">
+            <label for="" class="label"> Body </label>
+            <textarea name="posts[body]" class="field" style="height: 140px;"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button type="submit" class="create-post-btn"> Create post </button>
+      </div>
+    </form>
+  </div>
+</div>
