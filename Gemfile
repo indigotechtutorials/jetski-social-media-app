@@ -1,2 +1,2 @@
 source 'https://rubygems.org'
-gem 'jetski'
+gem 'jetski', path: '/Users/indigo/Current Projects/jetski'
